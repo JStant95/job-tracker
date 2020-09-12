@@ -2,6 +2,6 @@ Given(/^I am on the home page$/) do
   visit "/"
 end
 
-Then(/^I should see "Welcome to Job Tracker"$/) do |text|
-  expect(page).to have_content?(text)
+Then(/^I should see a welcome message$/) do
+  page.has_content?("Welcome to Job Tracker")
 end
